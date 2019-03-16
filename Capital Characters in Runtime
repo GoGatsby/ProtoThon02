@@ -1,0 +1,18 @@
+import keyboard  
+s="abcdefghijklmnopqrstuvwxyz"
+l=[]
+g=[]
+
+for i in s:
+    l.append(i)
+while True: 
+    try:
+      for i in l:
+        if keyboard.is_pressed(i):  
+            print(i.upper(),end='\r')
+            continue
+      
+        else:
+            pass
+    except:
+        break  
