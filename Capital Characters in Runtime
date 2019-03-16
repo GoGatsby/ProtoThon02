@@ -1,7 +1,7 @@
 import keyboard  
+import time
 s="abcdefghijklmnopqrstuvwxyz"
 l=[]
-g=[]
 
 for i in s:
     l.append(i)
@@ -9,7 +9,8 @@ while True:
     try:
       for i in l:
         if keyboard.is_pressed(i):  
-            print(i.upper(),end='\r')
+            print(i.upper(),end='')
+            time.sleep(0.15)
             continue
       
         else:
